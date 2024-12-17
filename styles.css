@@ -47,7 +47,7 @@ caption {
     font-family: monospace;
     color: white;
 }
-ul {
+.top_bar {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -55,10 +55,10 @@ ul {
     background-color: #525b6e;
     box-sizing: border-box;
 }
-li {
+.top_element {
     float: right;
 }
-li a {
+.top_element a {
     color: white;
     display: block;
     text-align: center;
@@ -66,14 +66,14 @@ li a {
     padding: 20px;
     text-decoration: none;
 }
-li a:link {
+.top_element a:link {
     color: white;
 }
-li a:hover {
+.top_element a:hover {
     background-color: #3495eb;
     color: white;
 }
-li a:visited {
+.top_element a:visited {
     color: white;
 }
 button {
