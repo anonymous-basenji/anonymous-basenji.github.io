@@ -5,16 +5,22 @@ body {
 }
 h1 {
     color: lightgreen;
-    margin: 16px;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 h2 {
     color: lightgreen;
-    margin: 16px;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 p {
     color: whitesmoke;
     font-size: 110%;
-    margin: 8px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+img {
+    margin-left: 10%;
 }
 a:link {
     color: lightblue
