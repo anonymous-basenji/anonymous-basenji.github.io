@@ -27,10 +27,10 @@ img {
     border-radius: 10px;
 }
 a:link {
-    color: lightblue
+    color: lightgreen;
 }
 a:visited {
-    color: pink
+    color: lightgreen;
 }
 a:hover {
     color: red
@@ -88,4 +88,13 @@ caption {
 }
 button {
     margin: 16px;
+}
+
+.achievements {
+    color: whitesmoke;
+    font-size: 110;
+    margin-left: 6%;
+    margin-right: 6%;
+    padding-left: 1.5em;
+    line-height: 1.8;
 }
