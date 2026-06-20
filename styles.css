@@ -57,34 +57,97 @@ caption {
     font-family: monospace;
     color: white;
 }
-.top_bar {
-    list-style-type: none;
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #525b6e;
+    padding: 0 6%;
+    position: relative;
+    height: 60px;
+}
+
+.nav_brand {
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.nav_logo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: 0 !important; /* Override generic img style */
+    margin-right: 12px;
+}
+
+.nav_title {
+    font-size: 130%;
+    font-weight: bold;
+}
+
+.nav_menu {
+    display: flex;
+    list-style: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
-    background-color: #525b6e;
-    box-sizing: border-box;
 }
-.top_element {
-    float: right;
-}
-.top_element a {
+
+.nav_menu li a {
     color: white;
     display: block;
-    text-align: center;
-    font-size:125%;
-    padding: 20px;
+    padding: 18px 15px;
     text-decoration: none;
+    font-size: 110%;
 }
-.top_element a:link {
-    color: white;
-}
-.top_element a:hover {
+
+.nav_menu li a:hover {
     background-color: #3495eb;
     color: white;
 }
-.top_element a:visited {
-    color: white;
+
+/* Hide toggle checkbox & hamburger by default on desktop */
+.menu_toggle, .hamburger {
+    display: none;
+}
+
+/* Mobile responsive styles */
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+        font-size: 28px;
+        color: white;
+        cursor: pointer;
+        user-select: none;
+    }
+
+    .nav_menu {
+        display: none; /* Hide menu by default on mobile */
+        flex-direction: column;
+        width: 100%;
+        background-color: #525b6e;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        z-index: 1000;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    .nav_menu li {
+        width: 100%;
+    }
+
+    .nav_menu li a {
+        padding: 15px 20px;
+        text-align: left;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    /* Toggle visibility when checkbox is checked */
+    .menu_toggle:checked ~ .nav_menu {
+        display: flex;
+    }
 }
 button {
     margin: 16px;
