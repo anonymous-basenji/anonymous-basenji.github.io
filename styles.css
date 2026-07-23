@@ -9,7 +9,7 @@ h1 {
     margin-right: 12%;
     border-radius: 10px;
     background-color: rgb(68, 72, 81);
-    padding: 5px
+    padding: 5px;
 }
 h2 {
     color: lightgreen;
@@ -33,7 +33,7 @@ a:visited {
     color: lightgreen;
 }
 a:hover {
-    color: red
+    color: red;
 }
 table {
     margin: 16px;
@@ -45,7 +45,7 @@ td, th {
     width: 200px;
     padding: 8px;
     border-radius: 10px;
-    background-color: #525b6e
+    background-color: #525b6e;
 }
 th {
     text-align: center;
@@ -114,11 +114,141 @@ caption {
     display: none;
 }
 
-/* Mobile responsive styles */
+button {
+    margin: 16px;
+}
+
+.hero_container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 24px;
+    margin-left: 12%;
+    margin-right: 12%;
+    margin-bottom: 20px;
+}
+
+.hero_container img {
+    margin-left: 0 !important;
+}
+
+.contact_card {
+    background-color: #444851;
+    border-radius: 10px;
+    padding: 20px 24px;
+    color: whitesmoke;
+    flex: 1;
+    min-width: 280px;
+    box-sizing: border-box;
+}
+
+.qr_code {
+    float: right;
+    width: 140px;
+    height: 140px;
+    border-radius: 6px;
+    border: 2px solid lightgreen;
+    background-color: white;
+    padding: 4px;
+    margin-left: 16px !important;
+    margin-bottom: 12px !important;
+}
+
+.contact_card h2 {
+    color: lightgreen;
+    margin: 0 0 14px 0 !important;
+}
+
+.contact_card p.contact_details {
+    margin: 0 0 16px 0 !important;
+    font-size: 105%;
+    line-height: 1.6;
+}
+
+.contact_card .quick_facts {
+    margin: 0 !important;
+    padding-left: 1.2em;
+    font-size: 100%;
+    line-height: 1.5;
+}
+
+.contact_card .quick_facts li {
+    margin-bottom: 6px;
+}
+
+.contact_card p.card_links {
+    clear: both;
+    margin: 16px 0 0 0 !important;
+    padding-top: 12px;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    font-size: 100%;
+}
+
+.achievements {
+    color: whitesmoke;
+    font-size: 110%;
+    margin-left: 12%;
+    margin-right: 12%;
+    padding-left: 1.5em;
+    line-height: 1.35;
+}
+
+.achievements li {
+    margin-bottom: 4px;
+}
+
+/* Mobile responsive styles - must come after all desktop rules */
 @media (max-width: 768px) {
-    h1, h2, p, img, .achievements {
-        margin-left: 5% !important;
-        margin-right: 5% !important;
+    .navbar {
+        padding: 0 4%;
+    }
+
+    h1, h2, p, .achievements {
+        margin-left: 4% !important;
+        margin-right: 4% !important;
+    }
+
+    .hero_container {
+        margin-left: 4% !important;
+        margin-right: 4% !important;
+        width: 92% !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 16px !important;
+        box-sizing: border-box !important;
+    }
+
+    .hero_container img {
+        width: 100% !important;
+        max-width: 300px !important;
+        height: auto !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        display: block !important;
+    }
+
+    .contact_card {
+        width: 100% !important;
+        min-width: unset !important;
+        padding: 20px 16px !important;
+        box-sizing: border-box !important;
+        text-align: center !important;
+    }
+
+    .contact_card .quick_facts {
+        display: inline-block !important;
+        text-align: left !important;
+        padding-left: 1.2em !important;
+    }
+
+    .qr_code {
+        float: none !important;
+        width: 130px !important;
+        height: 130px !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        margin-bottom: 14px !important;
+        display: block !important;
     }
 
     .hamburger {
@@ -155,20 +285,4 @@ caption {
     .menu_toggle:checked ~ .nav_menu {
         display: flex;
     }
-}
-button {
-    margin: 16px;
-}
-
-.achievements {
-    color: whitesmoke;
-    font-size: 110%;
-    margin-left: 12%;
-    margin-right: 12%;
-    padding-left: 1.5em;
-    line-height: 1.35;
-}
-
-.achievements li {
-    margin-bottom: 4px;
 }
