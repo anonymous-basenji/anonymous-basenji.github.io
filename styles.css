@@ -5,25 +5,25 @@ body {
 }
 h1 {
     color: lightgreen;
-    margin-left: 6%;
-    margin-right: 6%;
+    margin-left: 12%;
+    margin-right: 12%;
     border-radius: 10px;
     background-color: rgb(68, 72, 81);
     padding: 5px
 }
 h2 {
     color: lightgreen;
-    margin-left: 6%;
-    margin-right: 6%;
+    margin-left: 12%;
+    margin-right: 12%;
 }
 p {
     color: whitesmoke;
     font-size: 110%;
-    margin-left: 6%;
-    margin-right: 6%;
+    margin-left: 12%;
+    margin-right: 12%;
 }
 img {
-    margin-left: 6%;
+    margin-left: 12%;
     border-radius: 10px;
 }
 a:link {
@@ -63,8 +63,10 @@ caption {
     justify-content: space-between;
     align-items: center;
     background-color: #525b6e;
-    padding: 0 6%;
-    position: relative;
+    padding: 0 1.5%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
     height: 60px;
 }
 
@@ -114,6 +116,11 @@ caption {
 
 /* Mobile responsive styles */
 @media (max-width: 768px) {
+    h1, h2, p, img, .achievements {
+        margin-left: 5% !important;
+        margin-right: 5% !important;
+    }
+
     .hamburger {
         display: block;
         font-size: 28px;
@@ -156,8 +163,12 @@ button {
 .achievements {
     color: whitesmoke;
     font-size: 110%;
-    margin-left: 6%;
-    margin-right: 6%;
+    margin-left: 12%;
+    margin-right: 12%;
     padding-left: 1.5em;
-    line-height: 1.8;
+    line-height: 1.35;
+}
+
+.achievements li {
+    margin-bottom: 4px;
 }
