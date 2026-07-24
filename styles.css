@@ -144,14 +144,29 @@ button {
 
 .qr_code {
     float: right;
+    width: 150px;
+    margin-left: 16px !important;
+    margin-bottom: 12px !important;
+    text-align: center;
+}
+
+.qr_code img {
     width: 140px;
     height: 140px;
     border-radius: 6px;
     border: 2px solid lightgreen;
     background-color: white;
     padding: 4px;
-    margin-left: 16px !important;
-    margin-bottom: 12px !important;
+    display: block;
+    margin: 0 auto !important;
+}
+
+.qr_code p {
+    margin: 6px 0 0 0 !important;
+    font-size: 80%;
+    color: lightgreen;
+    text-align: center;
+    line-height: 1.2;
 }
 
 .contact_card h2 {
@@ -243,12 +258,15 @@ button {
 
     .qr_code {
         float: none !important;
-        width: 130px !important;
-        height: 130px !important;
+        width: 150px !important;
         margin-left: auto !important;
         margin-right: auto !important;
         margin-bottom: 14px !important;
-        display: block !important;
+    }
+
+    .qr_code img {
+        width: 130px !important;
+        height: 130px !important;
     }
 
     .hamburger {
