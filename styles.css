@@ -258,15 +258,20 @@ button {
 
     .qr_code {
         float: none !important;
-        width: 150px !important;
+        width: 85% !important;
+        max-width: 85% !important;
         margin-left: auto !important;
         margin-right: auto !important;
         margin-bottom: 14px !important;
+        box-sizing: border-box !important;
     }
 
     .qr_code img {
-        width: 130px !important;
-        height: 130px !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        height: auto !important;
+        aspect-ratio: 1 / 1 !important;
+        box-sizing: border-box !important;
     }
 
     .hamburger {
