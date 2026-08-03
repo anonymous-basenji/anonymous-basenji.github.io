@@ -335,24 +335,46 @@ button {
         display: none; /* Hide menu by default on mobile */
         flex-direction: column;
         width: 100%;
-        background-color: #525b6e;
+        height: auto !important;
+        background-color: #525b6e !important;
         position: absolute;
-        top: 60px;
+        top: 100%;
         left: 0;
         z-index: 1000;
         box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        gap: 0 !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        border: none !important;
+        overflow: hidden;
     }
 
     .nav_menu li {
         width: 100%;
-        margin: 0;
+        margin: 0 !important;
+        padding: 0 !important;
+        height: auto;
+        border: none !important;
+        background: transparent !important;
+        list-style: none !important;
     }
 
     .nav_menu li a {
-        margin: 0;
+        margin: 0 !important;
         padding: 15px 20px;
         text-align: left;
-        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        border: none !important;
+        outline: none !important;
+        background: transparent;
+        height: auto;
+        width: 100%;
+        display: block;
+        box-sizing: border-box;
+    }
+
+    .nav_menu li a:hover {
+        background-color: #3495eb !important;
+        color: white;
     }
 
     /* Toggle visibility when checkbox is checked */
