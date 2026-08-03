@@ -63,7 +63,7 @@ caption {
     justify-content: space-between;
     align-items: center;
     background-color: #525b6e;
-    padding: 0 1.5%;
+    padding: 0 0 0 1.5%;
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -94,14 +94,25 @@ caption {
     list-style: none;
     margin: 0;
     padding: 0;
+    height: 100%;
+}
+
+.nav_menu li {
+    margin: 0;
+    padding: 0;
+    height: 100%;
 }
 
 .nav_menu li a {
     color: white;
-    display: block;
-    padding: 18px 15px;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+    padding: 0 15px;
     text-decoration: none;
     font-size: 110%;
+    box-sizing: border-box;
 }
 
 .nav_menu li a:hover {
@@ -334,9 +345,11 @@ button {
 
     .nav_menu li {
         width: 100%;
+        margin: 0;
     }
 
     .nav_menu li a {
+        margin: 0;
         padding: 15px 20px;
         text-align: left;
         border-top: 1px solid rgba(255, 255, 255, 0.1);
