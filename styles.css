@@ -1,8 +1,14 @@
+:root {
+    color-scheme: dark;
+}
+
 body {
     background-color: rgb(38, 42, 51);
     font-family: monospace;
     margin: 0;
+    -webkit-tap-highlight-color: transparent;
 }
+
 h1 {
     color: lightgreen;
     margin-left: 12%;
@@ -68,6 +74,8 @@ caption {
     top: 0;
     z-index: 1000;
     height: 60px;
+    isolation: isolate;
+    transform: translateZ(0);
 }
 
 .nav_brand {
@@ -346,6 +354,10 @@ button {
         padding: 0 !important;
         margin: 0 !important;
         border: none !important;
+        isolation: isolate;
+        transform: translateZ(0);
+        will-change: transform;
+        -webkit-appearance: none;
     }
 
     .nav_menu li {
@@ -356,6 +368,7 @@ button {
         border: none !important;
         background-color: #525b6e !important;
         list-style: none !important;
+        transform: translateZ(0);
     }
 
     .nav_menu li a,
@@ -372,10 +385,15 @@ button {
         width: 100% !important;
         display: block !important;
         box-sizing: border-box !important;
+        -webkit-appearance: none;
+        -webkit-tap-highlight-color: transparent;
+        opacity: 1 !important;
+        visibility: visible !important;
     }
 
     .nav_menu li a:hover,
-    .nav_menu li a:active {
+    .nav_menu li a:active,
+    .nav_menu li a:focus {
         background-color: #3495eb !important;
         color: #ffffff !important;
     }
