@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en-US" data-theme="dark">
+    <head>
+        <title>QR Codes - Andrew Sklyarov</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="icon" type="image/x-icon" href="images/logo.jpeg">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="color-scheme" content="dark">
+        <meta name="description" content="QR codes to download Andrew Sklyarov's resume and recommendation letter.">
+        <style>
+            .qr_grid {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 24px;
+                margin: 20px 12%;
+                justify-content: flex-start;
+            }
+            .qr_card {
+                background-color: #525b6e;
+                border-radius: 10px;
+                padding: 24px;
+                text-align: center;
+                min-width: 260px;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+            }
+            .qr_card img {
+                width: 200px;
+                height: 200px;
+                border-radius: 8px;
+                border: 2px solid lightgreen;
+                background-color: white;
+                padding: 6px;
+                display: block;
+                margin: 0 auto 16px auto !important;
+            }
+            .qr_card h2 {
+                color: lightgreen;
+                margin: 0 0 10px 0 !important;
+                font-size: 130%;
+            }
+            .qr_card p {
+                color: whitesmoke;
+                margin: 0 0 16px 0 !important;
+                font-size: 100%;
+            }
+            .qr_card a {
+                color: lightgreen;
+                text-decoration: underline;
+                word-break: break-all;
+            }
+        </style>
+    </head>
+    <body>
+        <nav class="navbar">
+            <a href="index.html" style="text-decoration: none; color: inherit;">
+                <div class="nav_brand">
+                    <img src="images/logo.jpeg" class="nav_logo" alt="Andrew Sklyarov logo">
+                    <span class="nav_title">ANDREW SKLYAROV</span>
+                </div>
+            </a>
+            
+            <input type="checkbox" id="menu_toggle" class="menu_toggle">
+            <label for="menu_toggle" class="hamburger">&#9776;</label>
+            
+            <ul class="nav_menu">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="projects.html">PROJECTS</a></li>
+                <li><a href="https://www.facebook.com/profile.php?id=61560612490720" target="_blank" rel="noopener noreferrer">FACEBOOK</a></li>
+                <li><a href="mailto:andrew.v.sklyarov@gmail.com" target="_blank">EMAIL</a></li>
+                <li><a href="https://github.com/anonymous-basenji" target="_blank" rel="noopener noreferrer">GITHUB</a></li>
+                <li><a href="https://www.linkedin.com/in/andrew-sklyarov" target="_blank" rel="noopener noreferrer">LINKEDIN</a></li>
+                <li><a href="Andrew_Sklyarov_Resume.pdf" target="_blank" download="Andrew_Sklyarov_Resume.pdf">RESUME</a></li>
+                <li><a href="recommendation_letter_andrew_sklyarov.pdf" target="_blank" download="recommendation_letter_andrew_sklyarov.pdf">RECOMMENDATION</a></li>
+            </ul>
+        </nav>
+
+        <main id="main-content">
+            <h1>QR Codes</h1>
+            <p>Scan the QR codes below to download my resume or recommendation letter directly to your device.</p>
+
+            <div class="qr_grid">
+                <div class="qr_card">
+                    <h2>Resume</h2>
+                    <img src="https://api.qrserver.com/v1/create-qr-code/?size=300x300&amp;data=https%3A%2F%2Fanonymous-basenji.github.io%2Fdownload-resume.html"
+                         alt="QR code to download Resume"
+                         title="Scan to download Resume"
+                         loading="lazy">
+                    <p>Scan to download <br><a href="download-resume.html" target="_blank">Resume (PDF)</a></p>
+                </div>
+
+                <div class="qr_card">
+                    <h2>Recommendation Letter</h2>
+                    <img src="https://api.qrserver.com/v1/create-qr-code/?size=300x300&amp;data=https%3A%2F%2Fanonymous-basenji.github.io%2Fdownload-rec-letter.html"
+                         alt="QR code to download Recommendation Letter"
+                         title="Scan to download Recommendation Letter"
+                         loading="lazy">
+                    <p>Scan to download <br><a href="download-rec-letter.html" target="_blank">Recommendation Letter (PDF)</a></p>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>

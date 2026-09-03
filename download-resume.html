@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <title>Downloading Resume...</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: rgb(38, 42, 51);
+            color: whitesmoke;
+            font-family: monospace;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            text-align: center;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        h1 {
+            color: lightgreen;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        a {
+            color: lightgreen;
+            margin-top: 1rem;
+            display: inline-block;
+            word-break: break-all;
+        }
+    </style>
+</head>
+<body>
+    <h1>Downloading Resume...</h1>
+    <p>If your download doesn't start automatically, tap the link below:</p>
+    <p><a id="download-link" href="Andrew_Sklyarov_Resume.pdf" download="Andrew_Sklyarov_Resume.pdf">Download Andrew_Sklyarov_Resume.pdf</a></p>
+
+    <script>
+        window.addEventListener('DOMContentLoaded', () => {
+            const link = document.getElementById('download-link');
+            if (link) {
+                link.click();
+            }
+        });
+    </script>
+</body>
+</html>
